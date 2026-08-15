@@ -1,0 +1,18 @@
+{
+  "name": "lambda-auth-cpf",
+  "version": "1.0.0",
+  "description": "Lambda serverless de autenticação por CPF (validação, consulta ao cliente e emissão de JWT)",
+  "main": "src/handlers/authHandler.js",
+  "scripts": {
+    "test": "jest",
+    "package": "rm -rf dist && mkdir dist && npm ci --omit=dev --prefix . && zip -r dist/function.zip src node_modules package.json"
+  },
+  "dependencies": {
+    "@aws-sdk/client-secrets-manager": "^3.600.0",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.11.5"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
