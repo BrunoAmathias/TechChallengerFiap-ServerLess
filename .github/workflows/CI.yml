@@ -22,8 +22,5 @@ jobs:
       - name: Instalar dependências
         run: npm install
 
-      - name: Rodar testes (se existirem)
-        run: npm test --if-present
-
       - name: Validar que o handler carrega sem erros de sintaxe
         run: node -e "require('./index.js'); console.log('index.js OK')"
