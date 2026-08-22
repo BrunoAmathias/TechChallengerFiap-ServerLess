@@ -1,18 +1,25 @@
 {
-  "name": "lambda-auth-cpf",
+  "name": "techchallengerfiap-serverless",
   "version": "1.0.0",
-  "description": "Lambda serverless de autenticação por CPF (validação, consulta ao cliente e emissão de JWT)",
-  "main": "src/handlers/authHandler.js",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "package": "rm -rf dist && mkdir dist && npm ci --omit=dev --prefix . && zip -r dist/function.zip src node_modules package.json"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrunoAmathias/TechChallengerFiap-ServerLess.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/BrunoAmathias/TechChallengerFiap-ServerLess/issues"
+  },
+  "homepage": "https://github.com/BrunoAmathias/TechChallengerFiap-ServerLess#readme",
   "dependencies": {
-    "@aws-sdk/client-secrets-manager": "^3.600.0",
-    "jsonwebtoken": "^9.0.2",
-    "pg": "^8.11.5"
-  },
-  "devDependencies": {
-    "jest": "^29.7.0"
+    "jsonwebtoken": "^9.0.3",
+    "pg": "^8.23.0"
   }
 }
